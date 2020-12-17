@@ -1,9 +1,10 @@
 .header {
   margin: 0 auto;
-  max-width: 1600px;
   padding-top: 70px;
   padding-bottom: 240px;
-  background-image: url(../img/header/header-lines.jpg);
+  max-width: 1600px;
+
+  background-image: url(../img/5-lines-bg.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: repeat-y;
@@ -18,6 +19,7 @@
 }
 
 .header__top-logo {
+  color: var(--text);
   font-size: 42px;
   font-weight: 900;
 }
@@ -28,19 +30,56 @@
 }
 
 .header__top-nav-item {
+  position: relative;
   margin-right: 80px;
   font-size: 20px;
   font-weight: 700;
   color: var(--text);
+  z-index: 2;
 
   &:last-child {
     margin-right: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    bottom: 3px;
+    background-color: var(--main-clr);
+    height: 6px;
+    width: 0;
+    z-index: -1;
+    transition: 0.2s;
+  }
+  &:hover:after {
+    width: 110%;
+  }
+  &:active:after {
+    background-color: #ffd200;
+    width: 120%;
+  }
+  &:focus {
+    outline-style: dotted;
+    outline-color: var(--red);
   }
 }
 
 .header__top-icons {
   display: flex;
   font-size: 32px;
+  color: black;
+
+  & .fa-linkedin-in:hover {
+    color: #0077b5;
+  }
+
+  & .fa-github:hover {
+    color: #6cc644;
+  }
+
+  & .fa-vk:hover {
+    color: #45668e;
+  }
 }
 
 .header__top-icon {
@@ -52,97 +91,79 @@
   }
 }
 
-.header__content-main {
+.header__about {
   padding-top: 147px;
   display: flex;
   position: relative;
 }
 
-.header__content-main-desc {
+.header__about-desc {
   width: 50%;
 }
 
-.header__content-main-img {
-  width: 50%;
-  padding-top: 25px;
-  padding-left: 115px;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -17%;
-    right: -16%;
-    width: 500px;
-    height: 100px;
-    background-image: -moz-linear-gradient(
-      90deg,
-      rgb(244, 248, 249) 0%,
-      rgba(244, 248, 249, 0) 100%
-    );
-    background-image: -webkit-linear-gradient(
-      90deg,
-      rgb(244, 248, 249) 0%,
-      rgba(244, 248, 249, 0) 100%
-    );
-    background-image: -ms-linear-gradient(
-      90deg,
-      rgb(244, 248, 249) 0%,
-      rgba(244, 248, 249, 0) 100%
-    );
-    opacity: 0.502;
-  }
-}
-
-.header__content-main-title {
+.header__about-title {
   margin-bottom: 15px;
-  font-size: 90px;
-  font-weight: 800;
-  line-height: 1.2;
 }
 
-.header__content-main-text {
+.header__about-text {
   margin-bottom: 32px;
+  width: 98%;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.5;
   color: #393f47;
-}
 
-.header__content-main-desc-buttons {
-  display: flex;
-
-  a:first-child {
-    margin-right: 23px;
+  & p::selection {
+    background: #fbdc4d;
   }
 }
 
-.header-image {
-  margin-top: -127px;
-  margin-bottom: -11px;
+.header__about-buttons {
+  display: flex;
+
+  a:first-child {
+    margin-right: 13px;
+  }
+}
+
+.header__about-img {
+  width: 50%;
+  border-radius: 10px;
+
+  background-image: url(../img/header/anurov01.jpg);
+  background-size: auto;
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  background-color: #4483d2;
+}
+
+.header-img {
+  margin-top: -53px;
   max-width: 1600px;
 }
 
-.header__bottom {
+.header__skills {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   position: relative;
 }
 
-.header-title {
-  margin-bottom: 27px;
-  font-size: 40px;
-  font-weight: 800;
+.header__skills-desc {
+  margin-right: 181px;
 }
 
-.about-me-list {
+.header__skills-title {
+  margin-bottom: 25px;
+}
+
+.skills-list {
   margin-bottom: 40px;
   font-size: 24px;
   font-weight: 400;
 }
 
-.about-me-list-item {
-  margin-bottom: 4px;
+.skills-list-item {
+  margin-bottom: 3px;
   padding-left: 30px;
   position: relative;
 
@@ -150,7 +171,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 18px;
+    top: 19px;
     left: 0;
     width: 20px;
     height: 1px;
@@ -162,11 +183,69 @@
   }
 }
 
-.header__bottom-contacts {
-  padding-right: 112px;
+.header__skills-title-contacts {
+  margin-bottom: 32px;
 }
 
-.header-bottom__contacts-icons {
+.header__skills-contacts-icons {
+  margin-bottom: 23px;
   display: flex;
   font-size: 25px;
+}
+
+.skills-icon {
+  margin-right: 32px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.vk-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4d76a1;
+  .fa-vk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fb-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3b5998;
+  .fa-facebook-f {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.email {
+  position: relative;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 4px;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+  &:hover:after {
+    background-color: var(--blue);
+  }
+  &:active:after {
+    background-color: var(--red);
+  }
 }
