@@ -56,7 +56,7 @@
                         <p class="yellow">Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
                     </div>
                     <div class="header__about-buttons">
-                        <a href="#" class="btn">Познакомиться</a>
+                        <a href="#skills" class="btn">Познакомиться</a>
                         <a href="#" class="btn btn--light">Контакты</a>
                     </div>
                 </div>
@@ -66,13 +66,13 @@
         <!--// header about -->
         
         <div class="header-img">
-                <img src="img/header/header-main-img.png" alt="Горы">
+                <img src="img/header/header-main.png" alt="Горы">
         </div>
 
         <!-- header skills -->
         <div class="container">
 
-            <div class="header__skills">
+            <div class="header__skills" id="skills">
 
                 <div class="header__skills-desc">
                     <div class="header__skills-title">
@@ -85,30 +85,33 @@
                         <li class="skills-list-item yellow">оптимизация по retina экраны</li>
                         <li class="skills-list-item yellow">с Bootstrap и без него.</li>
                     </ul>
-                    <a href="" class="btn">Смотреть работы</a>
+                    <a href="#portfolio" class="btn">Смотреть работы</a>
                 </div>
 
                 <div class="header__skills-contacts">
                     <div class="header__skills-title-contacts">
                         <h3 class="title-3">На связи:</h3>
                     </div>
-                    <div class="header__skills-contacts-icons">
-                        <a href="" class="skills-icon">
-                            <span class="fab fa-github fa-2x" style="color:black"></span>
-                        </a>
-                        <a href="" class="skills-icon">
-                            <span class="fab fa-telegram fa-2x" style="color:#039be5"></span>
-                        </a>
-                        <a href="" class="skills-icon">
-                            <div class="vk-icon">
-                                <i class="fab fa-vk fa-inverse"></i>
-                            </div>
-                        </a>
-                        <a href="" class="skills-icon">
-                            <div class="fb-icon">
-                                <i class="fab fa-facebook-f fa-inverse"></i>
-                            </div>
-                        </a>
+                    <div class="header__skills-social-icons">
+                        <div class="social-icons">
+                            <a href="https://github.com/vladimir-anurov" target="_blank" class="social-icon">
+                                <span class="fab fa-github fa-2x" style="color:black"></span>
+                            </a>
+                            <a href="https://telegram.im/@VAnurov" target="_blank" class="social-icon">
+                                <span class="fab fa-telegram fa-2x" style="color:#039be5"></span>
+                            </a>
+                            <a href="https://vk.com/lsbro" target="_blank" class="social-icon">
+                                <div class="vk-icon">
+                                    <i class="fab fa-vk fa-inverse"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100007248672060" target="_blank" class="social-icon">
+                                <div class="fb-icon">
+                                    <i class="fab fa-facebook-f fa-inverse"></i>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                     <a href="mailto:mrvladimiranurov@gmail.com" class="email link--hover-active">mrvladimiranurov@gmail.com</a>
                 </div>
@@ -124,107 +127,117 @@
     <!-- main -->
     <main>
 
-        <div class="section-portfolio">
+        <!-- section-portfolio -->
+        <div class="section-portfolio" id="portfolio">
+            
             <div class="container">
 
                 <div class="section-portfolio__title">
                     <h2 class="title-2"><span class="underline">Портфолио</span></h2>
                 </div>
-                <nav class="section-portfolio__nav">
-                    <a href="#" class="section-portfolio__nav-item">Все работы</a>
-                    <a href="#" class="section-portfolio__nav-item">Bootstrap</a>
-                    <a href="#" class="section-portfolio__nav-item">WordPress</a>
-                    <a href="#" class="section-portfolio__nav-item">Frontend</a>
-                </nav>
 
-                <div class="section-portfolio__projects-row-large">
+                <div class="section-portfolio__projects-block">
 
-                    <a class="project-card">
-                        <div class="project-img">
-                            <img src="img/section-portfolio/forest-travel.jpg" alt="Форест-тревел">
-                        </div>
-                        <div class="project-title">
-                            <h4 class="title-4">
-                                Верстка “Форест тревел”
-                            </h4>
-                        </div>
-                        <div class="project-desc">
-                            <p>
-                                Верстка многостраничного сайта. 
-                            </p>
-                        </div>
-                    </a>
+                    <nav class="projects-block-nav">
+                        <a href="#" class="projects-block-nav-item">Все работы</a>
+                        <a href="#" class="projects-block-nav-item">Bootstrap</a>
+                        <a href="#" class="projects-block-nav-item">WordPress</a>
+                        <a href="#" class="projects-block-nav-item">Frontend</a>
+                    </nav>
 
-                    <a class="project-large">
-                        <div class="project-img">
-                            <img src="img/section-portfolio/mechta.jpg" alt="Мечта">
-                        </div>
-                        <div class="project-title">
-                            <h4 class="title-4">
-                                Сайт для коворкинга “Мечта”
-                            </h4>
-                        </div>
-                        <div class="project-desc">
-                            <p class="project-desc">
-                                Верстка лендинга.
-                            </p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="projects-block-row">
 
-                <div class="section-portfolio__projects-row-small">
+                        <a class="project-card project-card--large">
+                            <div class="project-img">
+                                <button>Смотреть проект</button>
+                                <img src="img/section-portfolio/forest-travel.jpg" alt="Форест-тревел">
+                            </div>
+                                <div class="project-title">
+                                    <h4 class="title-4">
+                                        Верстка “Форест тревел”
+                                    </h4>
+                                </div>
+                                <div class="project-desc">
+                                    <p>
+                                        Верстка многостраничного сайта. 
+                                    </p>
+                                </div>
+                        </a>
 
-                    <a class="project-card">
-                        <div class="project-img">
-                            <img src="img/section-portfolio/madcap.jpg" alt="Чашка кофе">
-                        </div>
-                        <div class="project-title">
-                            <h5 class="title-5">
-                                Верстка “Мир Авто”
-                            </h5>
-                        </div>
-                        <div class="project-desc">
-                            <p>
-                                Верстка многостраничного сайта. 
-                            </p>
-                        </div>
-                    </a>
+                        <a class="project-card project-card--large">
+                            <div class="project-img">
+                                <button>Смотреть проект</button>
+                                <img src="img/section-portfolio/mechta.jpg" alt="Мечта">
+                            </div>
+                            <div class="project-title">
+                                <h4 class="title-4">
+                                    Сайт для коворкинга “Мечта”
+                                </h4>
+                            </div>
+                            <div class="project-desc">
+                                <p class="project-desc">
+                                    Верстка лендинга.
+                                </p>
+                            </div>
+                        </a>
 
-                    <a class="project-card">
-                        <div class="project-img">
-                            <img src="img/section-portfolio/phone.jpg" alt="Телефон">
-                        </div>
-                        <div class="project-title">
-                            <h5 class="title-5">
-                                Верстка “Мир Авто”
-                            </h5>
-                        </div>
-                        <div class="project-desc">
-                            <p>
-                                Верстка многостраничного сайта. 
-                            </p>
-                        </div>
-                    </a>
+                        <a class="project-card">
+                            <div class="project-img">
+                                <button>Смотреть проект</button>
+                                <img src="img/section-portfolio/madcap.jpg" alt="Чашка кофе">
+                            </div>
+                            <div class="project-title">
+                                <h4 class="title-4">
+                                    Верстка “Мир Авто”
+                                </h4>
+                            </div>
+                            <div class="project-desc">
+                                <p>
+                                    Верстка многостраничного сайта. 
+                                </p>
+                            </div>
+                        </a>
 
-                    <a class="project-card">
-                        <div class="project-img">
-                            <img src="img/section-portfolio/orange.jpg" alt="Апельсин">
-                        </div>
-                        <div class="project-title">
-                            <h5 class="title-5">
-                                Верстка “Мир Авто”
-                            </h5>
-                        </div>
-                        <div class="project-desc">
-                            <p>
-                                Верстка многостраничного сайта. 
-                            </p>
-                        </div>
-                    </a>
+                        <a class="project-card">
+                            <div class="project-img">
+                                <button>Смотреть проект</button>
+                                <img src="img/section-portfolio/phone.jpg" alt="Телефон">
+                            </div>
+                            <div class="project-title">
+                                <h4 class="title-4">
+                                    Верстка “Мир Авто”
+                                </h4>
+                            </div>
+                            <div class="project-desc">
+                                <p>
+                                    Верстка многостраничного сайта. 
+                                </p>
+                            </div>
+                        </a>
 
+                        <a class="project-card">
+                            <div class="project-img">
+                                <button>Смотреть проект</button>
+                                <img src="img/section-portfolio/orange.jpg" alt="Апельсин">
+                            </div>
+                            <div class="project-title">
+                                <h4  class="title-4">
+                                    Верстка “Мир Авто”
+                                </h4>
+                            </div>
+                            <div class="project-desc">
+                                <p>
+                                    Верстка многостраничного сайта. 
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <!-- container -->
         </div>
+        <!--// section-portfolio -->
+
 
 
 
@@ -233,3 +246,4 @@
 
 </body>
 </html>
+

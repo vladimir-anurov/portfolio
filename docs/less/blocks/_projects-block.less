@@ -1,0 +1,137 @@
+.projects-block-nav {
+  display: flex;
+  margin-bottom: 47px;
+}
+
+.projects-block-nav-item {
+  font-size: 28px;
+  font-weight: 900;
+  margin-right: 77px;
+  color: #8fa5ae;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: var(--red);
+  }
+}
+
+.projects-block-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  margin-bottom: 58px;
+  max-width: 360px;
+  background-color: #f4f8f9 !important;
+  display: block;
+  overflow: hidden;
+  &:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.project-card--large {
+  max-width: 550px;
+  h4 {
+    font-size: 32px;
+  }
+  .project-desc p {
+    font-size: 22px;
+  }
+}
+
+.project-img {
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 200%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 220, 77, 0.8);
+    z-index: 1;
+  }
+  button {
+    position: absolute;
+    left: -300px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 53px;
+
+    background-color: #fff;
+    color: var(--red);
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 800;
+
+    border: 2px solid #fff;
+    border-radius: 30px;
+    z-index: 2;
+  }
+  button:hover {
+    background-color: #ea736d;
+    border-color: #ea736d;
+    color: white;
+  }
+  button:active {
+    background-color: #d4423b;
+    border-color: #d4423b;
+    color: white;
+  }
+}
+
+.project-title {
+  h4 {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.project-title h4::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--red);
+}
+
+.project-desc {
+  font-size: 20px;
+  color: black;
+}
+
+.project-card:hover,
+.project-card:active {
+  .project-img button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+  }
+  .project-img:after {
+    transition: 0.5s;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  h4 {
+    color: var(--red);
+  }
+  h4:before {
+    width: 100%;
+    transition: 0.5s;
+  }
+}

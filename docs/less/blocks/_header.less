@@ -25,7 +25,6 @@
 }
 
 .header__top-nav {
-  margin-left: 23px;
   display: flex;
 }
 
@@ -71,14 +70,17 @@
 
   & .fa-linkedin-in:hover {
     color: #0077b5;
+    transition: 0.2s;
   }
 
   & .fa-github:hover {
     color: #6cc644;
+    transition: 0.2s;
   }
 
   & .fa-vk:hover {
     color: #45668e;
+    transition: 0.2s;
   }
 }
 
@@ -92,8 +94,9 @@
 }
 
 .header__about {
-  padding-top: 147px;
+  margin-top: 147px;
   display: flex;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -127,7 +130,7 @@
 }
 
 .header__about-img {
-  width: 50%;
+  width: 43%;
   border-radius: 10px;
 
   background-image: url(../img/header/anurov01.jpg);
@@ -143,13 +146,16 @@
 }
 
 .header__skills {
+  padding-top: 100px;
+  margin-top: -100px;
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   position: relative;
 }
 
 .header__skills-desc {
-  margin-right: 181px;
+  width: 57%;
+  min-width: 650px;
 }
 
 .header__skills-title {
@@ -187,45 +193,8 @@
   margin-bottom: 32px;
 }
 
-.header__skills-contacts-icons {
+.header__skills-social-icons {
   margin-bottom: 23px;
-  display: flex;
-  font-size: 25px;
-}
-
-.skills-icon {
-  margin-right: 32px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.vk-icon {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #4d76a1;
-  .fa-vk {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.fb-icon {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #3b5998;
-  .fa-facebook-f {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 .email {
@@ -244,8 +213,10 @@
   }
   &:hover:after {
     background-color: var(--blue);
+    transition: 0.2s;
   }
   &:active:after {
     background-color: var(--red);
+    transition: 0.2s;
   }
 }
