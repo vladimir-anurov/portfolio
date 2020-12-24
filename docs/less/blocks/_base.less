@@ -100,9 +100,11 @@ button {
   margin-right: auto;
   padding: 0px 15px;
 
+  // Для планшетов от 768px
   @media (min-width: 768px) {
     padding: 0px 30px;
   }
+  // Для десктопа от 768px
   @media (min-width: 1200px) {
     padding: 0px;
   }
@@ -125,16 +127,33 @@ button {
 }
 
 h1 .underline::after {
-  height: 15px;
+  height: 13px;
   left: -1%;
-  bottom: 10px;
+  bottom: 3px;
   width: 102%;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    height: 15px;
+    left: -1%;
+    bottom: 10px;
+    width: 102%;
+  }
 }
 
 h2 .underline::after {
   height: 13px;
   left: -1%;
   bottom: 17px;
+  width: 102%;
+}
+
+h4 .underline::after {
+  height: 8px;
+  left: -1%;
+  bottom: 5px;
   width: 102%;
 }
 
@@ -155,9 +174,16 @@ span .yellow {
 }
 
 .title-1 {
-  font-size: 90px;
+  font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    font-size: 90px;
+  }
 }
 
 .title-2 {
@@ -166,8 +192,15 @@ span .yellow {
 }
 
 .title-3 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    font-size: 40px;
+  }
 }
 
 .title-4 {
@@ -239,8 +272,8 @@ span .yellow {
 
 .vk-icon {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 51px;
+  height: 47px;
   border-radius: 50%;
   background-color: #4d76a1;
   .fa-vk {
@@ -253,8 +286,8 @@ span .yellow {
 
 .fb-icon {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 51px;
+  height: 47px;
   border-radius: 50%;
   background-color: #3b5998;
   .fa-facebook-f {
@@ -263,4 +296,8 @@ span .yellow {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.none {
+  display: none;
 }

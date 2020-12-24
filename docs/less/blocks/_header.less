@@ -1,21 +1,43 @@
 .header {
   margin: 0 auto;
-  padding-top: 75px;
-  padding-bottom: 240px;
-  max-width: 1600px;
+  padding-top: 35px;
+  padding-bottom: 100px;
+  min-width: 320px;
 
-  background-image: url(../img/5-lines-bg.jpg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: repeat-y;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    padding-top: 75px;
+    padding-bottom: 240px;
+    max-width: 1600px;
+
+    background-image: url(../img/5-lines-bg.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat-y;
+  }
 }
 
-.header__top {
+.header__top-container {
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  // max-width: 290px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    max-width: 708px;
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    max-width: 1430px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .header__top-logo {
@@ -25,7 +47,14 @@
 }
 
 .header__top-nav {
-  display: flex;
+  display: none;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .header__top-nav-item {
@@ -64,9 +93,17 @@
 }
 
 .header__top-icons {
-  display: flex;
-  font-size: 32px;
-  color: black;
+  display: none;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    display: flex;
+    font-size: 32px;
+    color: black;
+  }
 
   & .fa-linkedin-in:hover {
     color: #0077b5;
@@ -94,14 +131,32 @@
 }
 
 .header__about {
-  margin-top: 147px;
+  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   position: relative;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    margin-top: 147px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
 }
 
 .header__about-desc {
-  width: 50%;
+  width: 100%;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
 }
 
 .header__about-title {
@@ -111,7 +166,7 @@
 .header__about-text {
   margin-bottom: 35px;
   width: 98%;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   color: #393f47;
@@ -119,43 +174,121 @@
   & p::selection {
     background: #fbdc4d;
   }
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    margin-bottom: 35px;
+    width: 98%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #393f47;
+  }
 }
 
 .header__about-buttons {
-  display: flex;
+  display: none;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    display: flex;
 
-  a:first-child {
-    margin-right: 13px;
+    a:first-child {
+      margin-right: 13px;
+    }
   }
 }
 
 .header__about-img {
-  width: 43%;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 290px;
   border-radius: 10px;
 
   background-image: url(../img/header/anurov01.jpg);
   background-size: auto;
-  background-position: center -90px;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #4483d2;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+
+    width: 43%;
+    height: auto;
+    border-radius: 10px;
+
+    background-image: url(../img/header/anurov01.jpg);
+    background-size: auto;
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    background-color: #4483d2;
+  }
 }
 
 .header-img {
-  margin-top: -109px;
-  max-width: 1600px;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-top: -109px;
+    max-width: 1600px;
+  }
 }
 
 .header__skills {
   padding-top: 100px;
   margin-top: -100px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
   position: relative;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    padding-top: 100px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
 }
 
 .header__skills-desc {
-  width: 57%;
-  min-width: 650px;
+  width: 100%;
+  & .btn {
+    display: none;
+    // Для планшетов от 768px
+    @media (min-width: 768px) {
+    }
+    // Для десктопа от 768px
+    @media (min-width: 1200px) {
+      display: inline-block;
+    }
+  }
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    width: 57%;
+    min-width: 650px;
+  }
 }
 
 .header__skills-title {
@@ -163,29 +296,45 @@
 }
 
 .skills-list {
+  width: 100%;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 .skills-list-item {
-  margin-bottom: 3px;
-  padding-left: 30px;
-  position: relative;
+  margin-bottom: 20px;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 19px;
-    left: 0;
-    width: 20px;
-    height: 1px;
-    background-color: #6b6b6b;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
   }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    text-transform: lowercase;
+    margin-bottom: 3px;
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 19px;
+      left: 0;
+      width: 20px;
+      height: 1px;
+      background-color: #6b6b6b;
+    }
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -200,7 +349,7 @@
 .email {
   position: relative;
   color: black;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   &::after {
     position: absolute;
@@ -211,12 +360,23 @@
     height: 1px;
     background-color: black;
   }
-  &:hover:after {
-    background-color: var(--blue);
-    transition: 0.2s;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
   }
-  &:active:after {
-    background-color: var(--red);
-    transition: 0.2s;
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    position: relative;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+
+    &:hover:after {
+      background-color: var(--blue);
+      transition: 0.2s;
+    }
+    &:active:after {
+      background-color: var(--red);
+      transition: 0.2s;
+    }
   }
 }
