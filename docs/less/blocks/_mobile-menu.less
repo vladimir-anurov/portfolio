@@ -1,0 +1,23 @@
+.mobile-menu {
+  position: fixed;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 270px;
+  background-color: var(--main-clr);
+  opacity: 0.95;
+  z-index: 5;
+  transform: translate(100%);
+  transition: 0.5s;
+  border-radius: 25px 0 0 25px;
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-menu.active {
+  transform: translate(0);
+}

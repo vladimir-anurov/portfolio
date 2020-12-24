@@ -2,12 +2,14 @@
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 100px;
-  min-width: 320px;
+  overflow: hidden;
 
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    padding-bottom: 85px;
   }
-  // Для десктопа от 768px
+
+  // Для десктопа от 1200px
   @media (min-width: 1200px) {
     padding-top: 75px;
     padding-bottom: 240px;
@@ -27,16 +29,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // max-width: 290px;
+
   // Для планшетов от 768px
   @media (min-width: 768px) {
-    max-width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   // Для десктопа от 768px
   @media (min-width: 1200px) {
-    max-width: 1430px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1460px;
   }
 }
 
@@ -132,19 +133,49 @@
 
 .header__about {
   margin-top: 30px;
-  display: flex;
-  flex-direction: column-reverse;
+  z-index: 10;
   position: relative;
+
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
   }
-  // Для десктопа от 768px
+  // Для десктопа от 1200px
   @media (min-width: 1200px) {
     margin-top: 147px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
+  }
+}
+
+.header__about-img {
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  max-width: 450px;
+  height: 298px;
+  border-radius: 10px;
+
+  background-image: url(../img/header/anurov01.jpg);
+  background-size: auto;
+  background-position: center -150px;
+  background-repeat: no-repeat;
+  background-color: #4483d2;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin: 0 0;
+    width: 43%;
+    height: auto;
+    background-position: center -160px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    border-radius: 10px;
+    background-position: center -90px;
   }
 }
 
@@ -152,10 +183,10 @@
   width: 100%;
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    width: 50%;
   }
   // Для десктопа от 768px
   @media (min-width: 1200px) {
-    width: 50%;
   }
 }
 
@@ -176,8 +207,9 @@
   }
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    margin-bottom: 0;
   }
-  // Для десктопа от 768px
+  // Для десктопа от 1200px
   @media (min-width: 1200px) {
     margin-bottom: 35px;
     width: 98%;
@@ -203,43 +235,24 @@
   }
 }
 
-.header__about-img {
-  margin-bottom: 60px;
-  width: 100%;
-  height: 290px;
-  border-radius: 10px;
-
-  background-image: url(../img/header/anurov01.jpg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #4483d2;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
-  // Для десктопа от 768px
-  @media (min-width: 1200px) {
-    margin-bottom: 0;
-
-    width: 43%;
-    height: auto;
-    border-radius: 10px;
-
-    background-image: url(../img/header/anurov01.jpg);
-    background-size: auto;
-    background-position: center -90px;
-    background-repeat: no-repeat;
-    background-color: #4483d2;
-  }
-}
-
 .header-img {
   margin-top: -50px;
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
+  transform: scale(1.5);
+  z-index: 1;
+  // Для смартфонов от 425px
+  @media (min-width: 425px) {
+    transform: scale(1.2);
+  }
+  // Для смартфонов от 576px
+  @media (min-width: 576px) {
+    transform: scale(1.2);
+  }
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    transform: scale(1);
   }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
@@ -251,12 +264,10 @@
 .header__skills {
   padding-top: 100px;
   margin-top: -100px;
-  display: flex;
-  flex-direction: column;
-
   position: relative;
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    display: flex;
   }
   // Для десктопа от 768px
   @media (min-width: 1200px) {
@@ -346,7 +357,7 @@
   margin-bottom: 23px;
 }
 
-.email {
+.header__skills-email {
   position: relative;
   color: black;
   font-size: 18px;

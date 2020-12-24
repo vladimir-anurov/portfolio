@@ -12,39 +12,41 @@
 </head>
 
 <body>
+
+    <div id="overlay"></div>
+
+    <div class="mobile-menu"></div>
+
     <!-- header -->
     <header class="header">
 
         <!-- header top -->
-        <div class="header__top">
-            <div class="header__top-container">
+        <div class="header__top-container">
 
-                <a href="index.html" class="header__top-logo underline">
-                    <p>ВА</p>
+            <a href="index.html" class="header__top-logo underline">
+                ВА
+            </a>
+
+            <div class="toggle-menu">
+                <span></span>
+            </div>
+
+            <nav class="header__top-nav">
+                <a href="index.html" class="header__top-nav-item hover-underline">Главная</a>
+                <a href="#" class="header__top-nav-item">Работы</a>
+                <a href="#" class="header__top-nav-item">Контакты</a>
+            </nav>
+
+            <div class="header__top-icons">
+                <a href="#" target="_blank" class="header__top-icon">
+                    <span class="fab fa-linkedin-in"></span>
                 </a>
-
-                <nav class="header__top-nav">
-                    <a href="index.html" class="header__top-nav-item hover-underline">Главная</a>
-                    <a href="#" class="header__top-nav-item">Работы</a>
-                    <a href="#" class="header__top-nav-item">Контакты</a>
-                </nav>
-
-                <div class="header__top-icons">
-                    <a href="#" target="_blank" class="header__top-icon">
-                        <span class="fab fa-linkedin-in"></span>
-                    </a>
-                    <a href="https://github.com/vladimir-anurov" target="_blank" class="header__top-icon">
-                        <span class="fab fa-github"></span>
-                    </a>
-                    <a href="https://vk.com/lsbro" target="_blank" class="header__top-icon">
-                        <span class="fab fa-vk"></span>
-                    </a>
-                </div>
-
-                <div class="toggle-menu">
-                    <span></span>
-                </div>
-
+                <a href="https://github.com/vladimir-anurov" target="_blank" class="header__top-icon">
+                    <span class="fab fa-github"></span>
+                </a>
+                <a href="https://vk.com/lsbro" target="_blank" class="header__top-icon">
+                    <span class="fab fa-vk"></span>
+                </a>
             </div>
 
         </div>
@@ -52,13 +54,18 @@
 
         <!-- header about -->
         <div class="container">
+
             <div class="header__about">
+
+                <div class="header__about-img"></div>
+
                 <div class="header__about-desc">
                     <div class="header__about-title">
                         <h1 class="title-1">
                             <span class="underline">Владимир</span>
                             <br>
-                            <span class="underline">Ануров</span></h1>
+                            <span class="underline">Ануров</span>
+                        </h1>
                     </div>
                     <div class="header__about-text">
                         <p class="yellow">Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
@@ -68,14 +75,17 @@
                         <a href="#" class="btn btn--light">Контакты</a>
                     </div>
                 </div>
-                <div class="header__about-img"></div>
+
             </div>
+
         </div>
         <!--// header about -->
         
+        <!-- header-img -->
         <div class="header-img">
                 <img src="img/header/header-main.png" alt="Горы">
         </div>
+        <!--// header-img -->
 
         <!-- header skills -->
         <div class="container">
@@ -121,7 +131,7 @@
                         </div>
 
                     </div>
-                    <a href="mailto:mrvladimiranurov@gmail.com" class="email link--hover-active">mrvladimiranurov@gmail.com</a>
+                    <a href="mailto:mrvladimiranurov@gmail.com" class="header__skills-email link--hover-active">mrvladimiranurov@gmail.com</a>
                 </div>
 
             </div>
