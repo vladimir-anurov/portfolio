@@ -1,14 +1,13 @@
+// header ------------------------------------------- base
 .header {
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 100px;
   overflow: hidden;
-
   // Для планшетов от 768px
   @media (min-width: 768px) {
     padding-bottom: 85px;
   }
-
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     padding-top: 75px;
@@ -22,6 +21,7 @@
   }
 }
 
+// header -------------------------------------------- top
 .header__top-container {
   padding-left: 15px;
   padding-right: 15px;
@@ -29,13 +29,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   // Для планшетов от 768px
   @media (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
   }
-  // Для десктопа от 768px
+  // Для десктопа от 1200px
   @media (min-width: 1200px) {
     max-width: 1460px;
   }
@@ -49,10 +48,7 @@
 
 .header__top-nav {
   display: none;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
-  // Для десктопа от 768px
+  // Для десктопа от 1200px
   @media (min-width: 1200px) {
     display: flex;
   }
@@ -64,6 +60,7 @@
   font-size: 20px;
   font-weight: 700;
   color: var(--text);
+
   z-index: 2;
 
   &:last-child {
@@ -87,19 +84,11 @@
     background-color: #ffd200;
     width: 120%;
   }
-  &:focus {
-    outline-style: dotted;
-    outline-color: var(--red);
-  }
 }
 
 .header__top-icons {
   display: none;
-
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
-  // Для десктопа от 768px
+  // Для десктопа от 1200px
   @media (min-width: 1200px) {
     display: flex;
     font-size: 32px;
@@ -131,125 +120,13 @@
   }
 }
 
-.header__about {
-  margin-top: 23px;
-  z-index: 1;
-
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin-top: 73px;
-
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    margin-top: 147px;
-  }
-}
-
-.header__about-img {
-  margin-bottom: 52px;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 100%;
-  max-width: 450px;
-  height: 289px;
-  border-radius: 10px;
-
-  background-image: url(../img/header/anurov01.jpg);
-  background-size: auto;
-  background-position: center -150px;
-  background-repeat: no-repeat;
-  background-color: #4483d2;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin: 0 0;
-    width: 50%;
-    height: auto;
-    background-position: center -160px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    border-radius: 10px;
-    background-position: center -90px;
-    width: 43%;
-  }
-}
-
-.header__about-desc {
-  width: 100%;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    width: 50%;
-  }
-  // Для десктопа от 768px
-  @media (min-width: 1200px) {
-  }
-}
-
-.header__about-title {
-  margin-bottom: 22px;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin-bottom: 16px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    margin-bottom: 15px;
-  }
-}
-
-.header__about-text {
-  margin-bottom: 35px;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.7;
-  color: #393f47;
-
-  & p::selection {
-    background: #fbdc4d;
-  }
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin-bottom: 0;
-    width: 99%;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    margin-bottom: 35px;
-    width: 98%;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #393f47;
-  }
-}
-
-.header__about-buttons {
-  display: none;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
-  // Для десктопа от 768px
-  @media (min-width: 1200px) {
-    display: flex;
-
-    a:first-child {
-      margin-right: 13px;
-    }
-  }
-}
-
+// header --------------------------------- img
 .header-img {
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
   transform: scale(1.5);
+
   z-index: 1;
   // Для смартфонов от 425px
   @media (min-width: 425px) {
@@ -268,173 +145,5 @@
   @media (min-width: 1200px) {
     margin-top: -109px;
     max-width: 1600px;
-  }
-}
-
-.header__skills {
-  position: relative;
-  margin-top: 73px;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    display: flex;
-    margin-top: 11px;
-  }
-  // Для десктопа от 768px
-  @media (min-width: 1200px) {
-    padding-top: 100px;
-    margin-top: -138px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-  }
-}
-
-.header__skills-desc {
-  width: 100%;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    width: 52%;
-  }
-  // Для десктопа от 768px
-  @media (min-width: 1200px) {
-    width: 57%;
-    min-width: 650px;
-  }
-  & .btn {
-    display: none;
-    // Для планшетов от 768px
-    @media (min-width: 768px) {
-    }
-    // Для десктопа от 768px
-    @media (min-width: 1200px) {
-      display: inline-block;
-    }
-  }
-}
-
-.header__skills-title {
-  margin-bottom: 26px;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin-bottom: 25px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    margin-bottom: 27px;
-  }
-}
-
-.skills-list {
-  width: 94%;
-  margin-bottom: 36px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.1;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin-bottom: 40px;
-    width: 100%;
-  }
-  // Для десктопа от 768px
-  @media (min-width: 1200px) {
-    margin-bottom: 42px;
-    font-size: 24px;
-    line-height: 1.5;
-  }
-}
-
-.skills-list-item {
-  margin-bottom: 19px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin-bottom: 18px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    text-transform: lowercase;
-    margin-bottom: 3px;
-    padding-left: 30px;
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 19px;
-      left: 0;
-      width: 20px;
-      height: 1px;
-      background-color: #6b6b6b;
-    }
-  }
-}
-
-.header__skills-contacts {
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    min-width: 32%;
-  }
-}
-
-.header__skills-title-contacts {
-  margin-bottom: 19px;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    margin-bottom: 34px;
-  }
-}
-
-.header__skills-social-icons {
-  margin-bottom: 14px;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    margin-bottom: 19px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    margin-bottom: 24px;
-  }
-}
-
-.header__skills-email {
-  position: relative;
-  color: black;
-  font-size: 18px;
-  font-weight: 400;
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    bottom: 4px;
-    width: 100%;
-    height: 1px;
-    background-color: black;
-  }
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    font-size: 20px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    position: relative;
-    color: black;
-    font-size: 24px;
-    font-weight: 400;
-
-    &:hover:after {
-      background-color: var(--blue);
-      transition: 0.2s;
-    }
-    &:active:after {
-      background-color: var(--red);
-      transition: 0.2s;
-    }
   }
 }

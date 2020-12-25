@@ -1,0 +1,108 @@
+// header ----------------------------------------- about
+.header__about {
+  margin-top: 23px;
+  z-index: 1;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-top: 73px;
+
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-top: 147px;
+  }
+}
+
+.header__about-img {
+  margin-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  max-width: 450px;
+  height: 289px;
+  border-radius: 10px;
+
+  background-image: url(../img/header/anurov01.jpg);
+  background-size: auto;
+  background-position: center -150px;
+  background-repeat: no-repeat;
+  background-color: #4483d2;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin: 0 0;
+    width: 50%;
+    height: auto;
+    background-position: center -160px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    border-radius: 10px;
+    background-position: center -90px;
+    width: 43%;
+  }
+}
+
+.header__about-desc {
+  width: 100%;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.header__about-title {
+  margin-bottom: 22px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
+}
+
+.header__about-text {
+  margin-bottom: 35px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #393f47;
+
+  & p::selection {
+    background: #fbdc4d;
+  }
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    width: 99%;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-bottom: 35px;
+    width: 98%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #393f47;
+  }
+}
+
+.header__about-buttons {
+  display: none;
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    display: flex;
+
+    a:first-child {
+      margin-right: 13px;
+    }
+  }
+}
