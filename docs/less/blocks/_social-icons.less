@@ -1,0 +1,43 @@
+.social-icons {
+  display: flex;
+  font-size: 25px;
+}
+
+.social-icon {
+  margin-right: 32px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+}
+
+.vk-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4d76a1;
+  .fa-vk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fb-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3b5998;
+  .fa-facebook-f {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

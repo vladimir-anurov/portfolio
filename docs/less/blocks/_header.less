@@ -132,11 +132,13 @@
 }
 
 .header__about {
-  margin-top: 30px;
-  z-index: 10;
+  margin-top: 23px;
+  z-index: 1;
 
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    margin-top: 73px;
+
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -149,13 +151,13 @@
 }
 
 .header__about-img {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
   margin-left: auto;
   margin-right: auto;
 
   width: 100%;
   max-width: 450px;
-  height: 298px;
+  height: 289px;
   border-radius: 10px;
 
   background-image: url(../img/header/anurov01.jpg);
@@ -166,7 +168,7 @@
   // Для планшетов от 768px
   @media (min-width: 768px) {
     margin: 0 0;
-    width: 43%;
+    width: 50%;
     height: auto;
     background-position: center -160px;
   }
@@ -174,6 +176,7 @@
   @media (min-width: 1200px) {
     border-radius: 10px;
     background-position: center -90px;
+    width: 43%;
   }
 }
 
@@ -189,15 +192,23 @@
 }
 
 .header__about-title {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
 }
 
 .header__about-text {
   margin-bottom: 35px;
-  width: 98%;
+  width: 100%;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #393f47;
 
   & p::selection {
@@ -206,6 +217,7 @@
   // Для планшетов от 768px
   @media (min-width: 768px) {
     margin-bottom: 0;
+    width: 99%;
   }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
@@ -234,7 +246,6 @@
 }
 
 .header-img {
-  margin-top: -50px;
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
@@ -251,6 +262,7 @@
   // Для планшетов от 768px
   @media (min-width: 768px) {
     transform: scale(1);
+    margin-top: -33px;
   }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
@@ -260,17 +272,17 @@
 }
 
 .header__skills {
-  padding-top: 100px;
-  margin-top: -100px;
   position: relative;
+  margin-top: 73px;
   // Для планшетов от 768px
   @media (min-width: 768px) {
     display: flex;
+    margin-top: 11px;
   }
   // Для десктопа от 768px
   @media (min-width: 1200px) {
     padding-top: 100px;
-    margin-top: -100px;
+    margin-top: -138px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -280,6 +292,15 @@
 
 .header__skills-desc {
   width: 100%;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    width: 52%;
+  }
+  // Для десктопа от 768px
+  @media (min-width: 1200px) {
+    width: 57%;
+    min-width: 650px;
+  }
   & .btn {
     display: none;
     // Для планшетов от 768px
@@ -290,41 +311,50 @@
       display: inline-block;
     }
   }
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
-  // Для десктопа от 768px
-  @media (min-width: 1200px) {
-    width: 57%;
-    min-width: 650px;
-  }
 }
 
 .header__skills-title {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-bottom: 27px;
+  }
 }
 
 .skills-list {
-  width: 100%;
-  margin-bottom: 40px;
+  width: 94%;
+  margin-bottom: 36px;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.1;
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    margin-bottom: 40px;
+    width: 100%;
   }
   // Для десктопа от 768px
   @media (min-width: 1200px) {
+    margin-bottom: 42px;
     font-size: 24px;
+    line-height: 1.5;
   }
 }
 
 .skills-list-item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    margin-bottom: 18px;
   }
-  // Для десктопа от 768px
+  // Для десктопа от 1200px
   @media (min-width: 1200px) {
     text-transform: lowercase;
     margin-bottom: 3px;
@@ -340,19 +370,37 @@
       height: 1px;
       background-color: #6b6b6b;
     }
+  }
+}
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+.header__skills-contacts {
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    min-width: 32%;
   }
 }
 
 .header__skills-title-contacts {
-  margin-bottom: 32px;
+  margin-bottom: 19px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-bottom: 34px;
+  }
 }
 
 .header__skills-social-icons {
-  margin-bottom: 23px;
+  margin-bottom: 14px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-bottom: 24px;
+  }
 }
 
 .header__skills-email {
@@ -371,6 +419,7 @@
   }
   // Для планшетов от 768px
   @media (min-width: 768px) {
+    font-size: 20px;
   }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
