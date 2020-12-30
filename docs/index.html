@@ -13,9 +13,9 @@
 
 <body>
 
-    <div id="overlay"></div>
+    <div id="overlay none"></div>
 
-    <div class="mobile-menu"></div>
+    <div class="mobile-menu none"></div>
 
     <!-- header -->
     <header class="header">
@@ -131,7 +131,7 @@
                         </div>
 
                     </div>
-                    <a href="mailto:mrvladimiranurov@gmail.com" class="header__skills-email link--hover-active">mrvladimiranurov@gmail.com</a>
+                    <a href="mailto:mrvladimiranurov@gmail.com" class="link-underline link--hover-active">mrvladimiranurov@gmail.com</a>
                 </div>
 
             </div>
@@ -146,7 +146,7 @@
     <main>
 
         <!-- section-portfolio -->
-        <div class="section-portfolio none" id="portfolio">
+        <div class="section-portfolio" id="portfolio">
             
             <div class="container">
 
@@ -154,7 +154,7 @@
                     <h2 class="title-2"><span class="underline">Портфолио</span></h2>
                 </div>
 
-                <div class="section-portfolio__projects-block">
+                <div class="section-portfolio__projects-block-wrapper">
 
                     <nav class="projects-block-nav">
                         <a href="#" class="projects-block-nav-item">Все работы</a>
@@ -163,7 +163,7 @@
                         <a href="#" class="projects-block-nav-item">Frontend</a>
                     </nav>
 
-                    <div class="projects-block-row">
+                    <div class="projects-block">
 
                         <a class="project-card project-card--large">
                             <div class="project-img">
@@ -249,8 +249,13 @@
                                 </p>
                             </div>
                         </a>
+
                     </div>
+
                 </div>
+
+                <a href="" class="link-underline link--hover-active view-all-link">Смотреть все работы</a>
+
             </div>
             <!-- container -->
         </div>
