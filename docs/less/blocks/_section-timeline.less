@@ -71,6 +71,7 @@
 
 .timeline-block-item {
   position: relative;
+  transition: 0.5s;
 
   // Для планшетов от 768px
   @media (min-width: 768px) {
@@ -140,23 +141,18 @@
   &:hover {
     .icon-1 {
       fill: #f39a25;
-      transition: 0.2s ease-in-out;
     }
     .icon-2 {
       fill: #ff1b1b;
-      transition: 0.2s ease-in-out;
     }
     .icon-3 {
       fill: #8523f5;
-      transition: 0.2s ease-in-out;
     }
     .icon-4 {
       fill: #0fc7a5;
-      transition: 0.2s ease-in-out;
     }
     .icon-5 {
       fill: #188cf8;
-      transition: 0.2s ease-in-out;
     }
   }
 }
@@ -274,6 +270,7 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
   overflow: hidden;
+
   // Для планшетов от 768px
   @media (min-width: 768px) {
     left: auto;
@@ -295,19 +292,25 @@
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
+
   .icon-1 {
     fill: #ffcf8f;
+    transition: 0.5s;
   }
   .icon-2 {
     fill: #ff5b5b;
+    transition: 0.5s;
   }
   .icon-3 {
     fill: #ac74ee;
+    transition: 0.5s;
   }
   .icon-4 {
     fill: #51e5cb;
+    transition: 0.5s;
   }
   .icon-5 {
     fill: #7cc0ff;
+    transition: 0.5s;
   }
 }

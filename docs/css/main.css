@@ -868,6 +868,10 @@ span .yellow ::-webkit-selection {
 }
 .timeline-block-item {
   position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   .timeline-block-item {
@@ -932,38 +936,18 @@ span .yellow ::-webkit-selection {
 }
 .timeline-block-item:hover .icon-1 {
   fill: #f39a25;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 .timeline-block-item:hover .icon-2 {
   fill: #ff1b1b;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 .timeline-block-item:hover .icon-3 {
   fill: #8523f5;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 .timeline-block-item:hover .icon-4 {
   fill: #0fc7a5;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 .timeline-block-item:hover .icon-5 {
   fill: #188cf8;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 @media (min-width: 768px) {
   .timeline-block-item:nth-child(even) {
@@ -1108,18 +1092,38 @@ span .yellow ::-webkit-selection {
 }
 .timeline-block-item-icon svg .icon-1 {
   fill: #ffcf8f;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .timeline-block-item-icon svg .icon-2 {
   fill: #ff5b5b;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .timeline-block-item-icon svg .icon-3 {
   fill: #ac74ee;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .timeline-block-item-icon svg .icon-4 {
   fill: #51e5cb;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .timeline-block-item-icon svg .icon-5 {
   fill: #7cc0ff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .section-contacts {
   position: relative;
