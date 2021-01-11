@@ -25,4 +25,13 @@ overlay.addEventListener('click',function(){
     toggleMenu.classList.remove('active');
     mobMenu.classList.remove('active');
     bodyEl.classList.remove('noscroll')
-})
+});
+
+//-фильтрация проектов
+let containerEl = document.querySelector('#portfolio-projects');
+
+let mixer = mixitup(containerEl, {
+    classNames: {
+        block: ""
+    }
+});

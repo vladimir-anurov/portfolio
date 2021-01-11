@@ -6,14 +6,13 @@
     <title>В.Ануров: web-разработчик</title>
 
     <link rel="stylesheet" href="fonts/mplus1/mplus1p.css">
-    <script src="https://kit.fontawesome.com/7a8c569e2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     
 </head>
 
 <body>
 
-    <div id="overlay none"></div>
+    <div id="overlay"></div>
 
     <div class="mobile-menu none"></div>
 
@@ -156,16 +155,16 @@
 
                 <div class="section-portfolio__projects-block-wrapper">
 
-                    <nav class="projects-block-nav">
-                        <a href="#" class="projects-block-nav-item">Все работы</a>
-                        <a href="#" class="projects-block-nav-item">Bootstrap</a>
-                        <a href="#" class="projects-block-nav-item">WordPress</a>
-                        <a href="#" class="projects-block-nav-item">Frontend</a>
-                    </nav>
+                    <div class="projects-block-nav">
+                        <button href="#" class="projects-block-nav-item control-active" data-filter="all">Все работы</button>
+                        <button href="#" class="projects-block-nav-item" data-filter=".boots">Bootstrap</button>
+                        <button href="#" class="projects-block-nav-item" data-filter=".wp">WordPress</button>
+                        <button href="#" class="projects-block-nav-item" data-filter=".frontend">Frontend</button>
+                    </div>
 
-                    <div class="projects-block">
+                    <div class="projects-block" id="portfolio-projects">
 
-                        <a class="project-card project-card--large">
+                        <a class="project-card project-card--large mix boots">
                             <div class="project-img">
                                 <button>Смотреть проект</button>
                                 <img src="img/section-portfolio/forest-travel.jpg" alt="Форест-тревел">
@@ -182,7 +181,7 @@
                                 </div>
                         </a>
 
-                        <a class="project-card project-card--large">
+                        <a class="project-card project-card--large mix wp">
                             <div class="project-img">
                                 <button>Смотреть проект</button>
                                 <img src="img/section-portfolio/mechta.jpg" alt="Мечта">
@@ -199,7 +198,7 @@
                             </div>
                         </a>
 
-                        <a class="project-card">
+                        <a class="project-card mix wp">
                             <div class="project-img">
                                 <button>Смотреть проект</button>
                                 <img src="img/section-portfolio/madcap.jpg" alt="Чашка кофе">
@@ -216,7 +215,7 @@
                             </div>
                         </a>
 
-                        <a class="project-card">
+                        <a class="project-card mix frontend">
                             <div class="project-img">
                                 <button>Смотреть проект</button>
                                 <img src="img/section-portfolio/phone.jpg" alt="Телефон">
@@ -233,7 +232,7 @@
                             </div>
                         </a>
 
-                        <a class="project-card">
+                        <a class="project-card mix boots">
                             <div class="project-img">
                                 <button>Смотреть проект</button>
                                 <img src="img/section-portfolio/orange.jpg" alt="Апельсин">
@@ -467,7 +466,11 @@
 
     </main>
     <!--// main -->
-
+    
+    <script src="libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/7a8c569e2f.js" crossorigin="anonymous"></script>
+    <script src="libs/mixitup3/mixitup.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>
