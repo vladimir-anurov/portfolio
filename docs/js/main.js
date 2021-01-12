@@ -2,6 +2,8 @@ const toggleMenu = document.querySelector('.toggle-menu');//иконка гам�
 const mobMenu = document.querySelector('.mobile-menu');//иконка меню
 const overlay = document.querySelector('#overlay');//overlay
 const bodyEl = document.body;//body-scroll
+const formItems = document.querySelectorAll('.form-field');
+
 
 //прослушиваем событие клик по гамбургеру
 toggleMenu.addEventListener('click', function(){
@@ -26,4 +28,9 @@ overlay.addEventListener('click',function(){
     mobMenu.classList.remove('active');
     bodyEl.classList.remove('noscroll')
 });
+
+
+
+
+
 

@@ -71,7 +71,6 @@
 
 .timeline-block-item {
   position: relative;
-  transition: 0.5s;
 
   // Для планшетов от 768px
   @media (min-width: 768px) {
@@ -91,14 +90,15 @@
     @media (min-width: 768px) {
       content: "";
       display: block;
-
       position: absolute;
+
       top: -99px;
       bottom: 0;
 
       width: 4px;
       height: 57px;
       right: 35px;
+
       background-color: #e1eef4;
     }
     // Для десктопа от 1200px
@@ -110,14 +110,15 @@
   &::after {
     content: "";
     display: block;
-
     position: absolute;
+
     left: 36px;
     top: 96px;
     bottom: -65px;
 
     width: 4px;
     height: 50%;
+
     background-color: #e1eef4;
     // Для планшетов от 768px
     @media (min-width: 768px) {
@@ -129,8 +130,8 @@
     }
     // Для десктопа от 1200px
     @media (min-width: 1200px) {
-      height: 93%;
       right: 27px;
+      height: 93%;
     }
   }
 
@@ -154,6 +155,23 @@
     .icon-5 {
       fill: #188cf8;
     }
+    .underline::after {
+      background-color: var(--red);
+    }
+  }
+}
+
+.timeline-block-item + .timeline-block-item {
+  margin-top: 65px;
+  position: relative;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-top: 90px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-top: 105px;
   }
 }
 
@@ -181,17 +199,59 @@
   }
 }
 
-.timeline-block-item + .timeline-block-item {
-  margin-top: 65px;
-  position: relative;
+.timeline-block-item-icon {
+  position: absolute;
+  left: 0;
+  top: -2px;
+
+  width: 74px;
+  height: 74px;
+  border-radius: 28px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+  overflow: hidden;
 
   // Для планшетов от 768px
   @media (min-width: 768px) {
-    margin-top: 90px;
+    left: auto;
+    right: -3px;
+    top: -24px;
   }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
-    margin-top: 105px;
+    right: -10px;
+    top: -20px;
+  }
+}
+
+.timeline-block-item-icon svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+
+  .icon-1 {
+    fill: #ffcf8f;
+    transition: 0.5s;
+  }
+  .icon-2 {
+    fill: #ff5b5b;
+    transition: 0.5s;
+  }
+  .icon-3 {
+    fill: #ac74ee;
+    transition: 0.5s;
+  }
+  .icon-4 {
+    fill: #51e5cb;
+    transition: 0.5s;
+  }
+  .icon-5 {
+    fill: #7cc0ff;
+    transition: 0.5s;
   }
 }
 
@@ -256,61 +316,5 @@
     @media (min-width: 768px) {
       font-size: 18px;
     }
-  }
-}
-
-.timeline-block-item-icon {
-  position: absolute;
-  left: 0;
-  top: -2px;
-
-  width: 74px;
-  height: 74px;
-  border-radius: 28px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
-  overflow: hidden;
-
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-    left: auto;
-    right: -3px;
-    top: -24px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    right: -10px;
-    top: -20px;
-  }
-}
-
-.timeline-block-item-icon svg {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-
-  .icon-1 {
-    fill: #ffcf8f;
-    transition: 0.5s;
-  }
-  .icon-2 {
-    fill: #ff5b5b;
-    transition: 0.5s;
-  }
-  .icon-3 {
-    fill: #ac74ee;
-    transition: 0.5s;
-  }
-  .icon-4 {
-    fill: #51e5cb;
-    transition: 0.5s;
-  }
-  .icon-5 {
-    fill: #7cc0ff;
-    transition: 0.5s;
   }
 }

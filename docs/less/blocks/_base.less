@@ -104,8 +104,13 @@ ul {
 }
 
 button,
+textarea,
 input {
   outline: none;
+}
+
+textarea {
+  resize: none;
 }
 
 button {
@@ -144,6 +149,7 @@ button {
     width: 110%;
 
     z-index: -1;
+    transition: 0.5s;
   }
 }
 
@@ -253,6 +259,11 @@ span .yellow {
   }
 }
 
+.title-5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .btn {
   padding-left: 40px;
   padding-right: 40px;
@@ -270,15 +281,15 @@ span .yellow {
   font-weight: 700;
   color: var(--text);
 
+  transition: 0.5s;
+
   &:hover {
     background-color: #ffd200;
     border-color: #ffd200;
-    transition: 0.2s;
   }
   &:active {
     background-color: #e1bc10;
     border-color: #e1bc10;
-    transition: 0.2s;
   }
 }
 
@@ -308,6 +319,7 @@ span .yellow {
   color: black;
   font-size: 18px;
   font-weight: 400;
+  transition: 0.5s;
   &::after {
     position: absolute;
     content: "";
@@ -316,6 +328,7 @@ span .yellow {
     width: 100%;
     height: 1px;
     background-color: black;
+    transition: 0.5s;
   }
   // Для планшетов от 768px
   @media (min-width: 768px) {

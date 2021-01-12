@@ -391,7 +391,7 @@
         <!--// section-timeline -->
 
         <!-- section-contacts -->
-        <div class="section-contacts none">
+        <div class="section-contacts">
 
             <div class="container">
 
@@ -403,40 +403,51 @@
                 <div class="section-contacts__contacts-block">
 
                     <div class="contacts-desc">
+
                         <div class="contacts-desc-text">
                             <p>Если вы ищете специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом — напишите мне.</p>
                         </div>
-                        <div class="contacts-block-info">
 
-                            <!-- contacts-table -->
-                            <table class="contacts-table">
-                                <tr>
-                                    <th>Email</th>
-                                    <td>
-                                        <a href="mailto:mrvladimiranurov@gmail.com?subject=Заказ на вёрстку" class="link--hover-active td-link">mrvladimiranurov@gmail.com</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Skype</th>
-                                    <td>
-                                        <a href="skype:wolf-ls1?chat" class="td-link link--hover-active">wolf-ls1</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Телефон</th>
-                                    <td>
-                                        <a href="tel:+79268318129" class="td-link--gray">+7 (926) 831-81-29</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>Адрес</th>
-                                    <td>Россия, Москва</td>
-                                </tr>
-                            </table>
-                            <!--// contacts-table -->
+                        <div class="contacts-desc-info">
 
+                            <div class="contacts-desc-info-item">
+                                <div class="contacts-title">
+                                    <h5 class="title-5">Email</h5>
+                                </div>
+                                <div class="contacts-link">
+                                    <a href="mailto:mrvladimiranurov@gmail.com?subject=Заказ на вёрстку" class="link--hover-active">mrvladimiranurov@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contacts-desc-info-item">
+                                <div class="contacts-title">
+                                    <h5 class="title-5">Skype</h5>
+                                </div>
+                                <div class="contacts-link">
+                                    <a href="skype:wolf-ls1?chat">wolf-ls1</a>
+                                </div>
+                            </div>
+
+                            <div class="contacts-desc-info-item">
+                                <div class="contacts-title">
+                                    <h5 class="title-5">Телефон</h5>
+                                </div>
+                                <div class="contacts-link">
+                                    <a href="tel:+79268318129">+7 (926) 831 81 29</a>
+                                </div>
+                            </div>
+
+                            <div class="contacts-desc-info-item">
+                                <div class="contacts-title">
+                                    <h5 class="title-5">Адрес</h5>
+                                </div>
+                                <div class="contacts-link">
+                                    <p>Россия, Москва</p>
+                                </div>
+                            </div>
 
                         </div>
+
                         <div class="contacts-block-social-icons">
                             <div class="social-icons">
                                 <a href="https://github.com/vladimir-anurov" target="_blank" class="social-icon">
@@ -457,11 +468,29 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="contacts-form">
 
                     </div>
+
+                    <form class="contacts-form">
+
+                        <div class="form-item">
+                            <span class="fake-placeholder">Ваш Email</span>
+                            <input type="email" class="form-field" name="email" required>
+                        </div>
+                        <div class="form-item">
+                            <span class="fake-placeholder">Тема письма</span>
+                            <input type="text" class="form-field" name="subject">
+                        </div>
+                        <div class="form-item">
+                            <span class="fake-placeholder">Сообщение</span>
+                            <textarea name="message" id="" cols="30" rows="10" class="form-field"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <input type="submit" class="form-btn btn" value="Отправить">
+                        </div>
+
+                    </form>
+                    <div id="answer"></div>
 
                 </div>
 
@@ -475,8 +504,9 @@
     <!--// main -->
     
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
     <script src="https://kit.fontawesome.com/7a8c569e2f.js" crossorigin="anonymous"></script>
-    <script src="libs/mixitup3/mixitup.min.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
 
 </body>
