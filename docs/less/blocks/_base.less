@@ -24,7 +24,15 @@ body {
   height: 100%;
   font-family: "M PLUS 1p";
   color: var(--text);
-  font-size: 18px;
+  font-size: 16px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 body.noscroll {
   overflow: hidden;
@@ -43,6 +51,10 @@ body.noscroll {
 }
 
 #overlay.active {
+  display: block;
+}
+
+form {
   display: block;
 }
 
@@ -260,8 +272,15 @@ span .yellow {
 }
 
 .title-5 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .btn {
@@ -277,11 +296,19 @@ span .yellow {
   border-color: var(--main-clr);
   border-radius: 30px;
 
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text);
 
   transition: 0.5s;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 
   &:hover {
     background-color: #ffd200;

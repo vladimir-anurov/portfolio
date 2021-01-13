@@ -6,9 +6,9 @@ $c = true;
 // For POST method only!
 
 // Save Basic Form parametrs
-$project_name = "myPortfolio";
+$project_name = "MyPortfolio";
 $admin_email  = "mrvladimiranurov@gmail.com";
-$email_from  = "info@vanurov.ru";
+$email_from  = "info@n92683b1.beget.tech";
 // $form_subject = trim($_POST["form_subject"]);
 
 // Serialize form fields - that filled-in by User

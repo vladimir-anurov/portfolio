@@ -1,26 +1,85 @@
 .section-contacts {
   position: relative;
-  padding: 150px 0;
+  padding: 60px 0 60px;
   background-color: #f4f8f9;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    padding: 90px 0 90px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    padding: 150px 0;
+  }
+}
+
+.section-contacts::after {
+  display: none;
+  // Для десктопа от 1200px
+  @media (min-width: 1300px) {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -70px;
+    display: block;
+    height: 250px;
+    width: 200px;
+    background-image: url(../img/section-contacts/semi-col.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.4;
+  }
 }
 
 .section-contacts__title {
-  margin-bottom: 50px;
+  margin-bottom: 37px;
   text-align: center;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+  }
 }
 
 .section-contacts__contacts-block {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+  }
 }
 
 .contacts-desc {
-  width: 48%;
-  padding-top: 30px;
+  width: 100%;
+  line-height: 1.6;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    width: 43%;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    width: 44%;
+    padding-top: 30px;
+  }
 }
 
 .contacts-desc-text {
-  margin-bottom: 55px;
+  margin-bottom: 20px;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-bottom: 38px;
+  }
 }
 
 .contacts-desc-info {
@@ -28,24 +87,50 @@
 }
 
 .contacts-desc-info-item {
-  display: flex;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contacts-desc-info-item + .contacts-desc-info-item {
-  margin-top: 25px;
+  margin-top: 9px;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-top: 20px;
+  }
 }
 
 .contacts-title {
-  width: 40%;
-}
-
-.contacts-link {
+  line-height: 1.5;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    width: 40%;
+  }
 }
 
 .contacts-link {
   color: #96969d;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 
   a {
     transition: 0.5s;
@@ -58,5 +143,28 @@
 }
 
 .contacts-block-social-icons {
-  margin-top: 45px;
+  margin-top: 31px;
+  margin-bottom: 45px;
+
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    margin-top: 45px;
+  }
+}
+
+.contacts-form-block {
+  width: 100%;
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    width: 48%;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    width: 45%;
+    margin-right: 20px;
+  }
 }
