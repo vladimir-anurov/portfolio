@@ -39,6 +39,49 @@ $('#page-nav').onePageNav({
     end: function () {},
     scrollChange: function ($currentListItem) {}
 });
+//отображение/скрытие карточек проектов по загрузке страницы
+    if($(window).width() <1200){
+        $('.project-card.hide-card').hide();
+        $('.show-project-cards').on('click', function(){
+            $('.project-card.hide-card').fadeIn();
+            $(this).hide();
+        })
+    }
+    else{
+        $('.project-card.hide-card').fadeIn();
+        $('.show-project-cards').hide();
+    }
+	//отображение/скрытие карточек проектов при ресайзе страницы
+    $(window).on('resize', function(){
+    if($(window).width() <1200){
+        $('.project-card.hide-card').hide();
+        $('.show-project-cards').fadeIn();
+        $('.show-project-cards').on('click', function(){
+            $('.project-card.hide-card').fadeIn();
+            $(this).css('display', 'none');
+        });
+    }
+    else{
+        $('.project-card.hide-card').fadeIn();
+        $('.show-project-cards').hide();
+    }
+});
+//показать кнопку скролл вверх
+    $('#backtop').hide();
+
+    $(window).scrollTop(function(){
+
+        if( $(this).scrollTop() > 300 ){
+
+            $('#backtop').fadeIn();
+        }
+        else{
+            $('#backtop').fadeOut();
+        }
+        
+});
+
+
 
 
 

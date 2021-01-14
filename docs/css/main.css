@@ -587,6 +587,7 @@ span .yellow ::-webkit-selection {
   padding-top: 43px;
   padding-bottom: 130px;
   background-color: #f4f8f9;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .section-portfolio {
@@ -602,24 +603,6 @@ span .yellow ::-webkit-selection {
 }
 .section-portfolio__title {
   margin-bottom: 41px;
-}
-.view-all-link {
-  margin-top: 39px;
-  font-size: 20px;
-  color: #039be5;
-}
-.view-all-link::after {
-  background-color: #039be5;
-}
-@media (min-width: 768px) {
-  .view-all-link {
-    margin-top: 35px;
-  }
-}
-@media (min-width: 1200px) {
-  .view-all-link {
-    display: none;
-  }
 }
 @media (min-width: 768px) {
   .projects-block {
@@ -651,9 +634,6 @@ span .yellow ::-webkit-selection {
   }
   .project-card + .project-card {
     margin-top: 0;
-  }
-  .project-card:last-child {
-    display: none;
   }
   .project-card:nth-child(n + 3) {
     margin-top: 42px;
@@ -830,9 +810,43 @@ span .yellow ::-webkit-selection {
 .project-card:active h4:before {
   width: 100%;
 }
+.view-all-button {
+  position: relative;
+  margin-top: 39px;
+  font-size: 20px;
+  color: #039be5;
+  border: none;
+  background-color: #f4f8f9;
+  padding: 0;
+}
+.view-all-button::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 2px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #039be5;
+}
+@media (min-width: 768px) {
+  .view-all-button {
+    margin-top: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .view-all-button {
+    display: none;
+  }
+}
 .section-timeline {
   padding-top: 60px;
   padding-bottom: 65px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .section-timeline {
@@ -1166,6 +1180,7 @@ span .yellow ::-webkit-selection {
   position: relative;
   padding: 60px 0 60px;
   background-color: #f4f8f9;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .section-contacts {
@@ -1991,5 +2006,20 @@ label.error {
 }
 #page-nav li.active {
   background-color: var(--red);
+}
+#backtop {
+  display: block;
+  font-size: 50px;
+  color: var(--red);
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+}
+@media (min-width: 1200px) {
+  #backtop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

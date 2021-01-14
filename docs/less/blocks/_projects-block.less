@@ -21,10 +21,6 @@
       margin-top: 0;
     }
 
-    &:last-child {
-      display: none;
-    }
-
     &:nth-child(n + 3) {
       margin-top: 42px;
     }
@@ -189,5 +185,35 @@
   }
   h4:before {
     width: 100%;
+  }
+}
+
+.view-all-button {
+  position: relative;
+  margin-top: 39px;
+  font-size: 20px;
+  color: #039be5;
+  border: none;
+  background-color: #f4f8f9;
+  padding: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 2px;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: 0.5s;
+    background-color: #039be5;
+  }
+  // Для планшетов от 768px
+  @media (min-width: 768px) {
+    margin-top: 35px;
+  }
+  // Для десктопа от 1200px
+  @media (min-width: 1200px) {
+    display: none;
   }
 }
