@@ -12,23 +12,21 @@
   }
 }
 
-.section-contacts::after {
+.section-contacts__img {
   display: none;
   // Для десктопа от 1200px
-  @media (min-width: 1300px) {
-    position: absolute;
-    content: "";
-    top: 50%;
-    transform: translate(0, -50%);
-    left: -70px;
+  @media (min-width: 1400px) {
     display: block;
-    height: 250px;
-    width: 200px;
-    background-image: url(../img/section-contacts/semi-col.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.4;
+    position: absolute;
+    top: 30%;
+    left: -5%;
   }
+}
+
+.move-quotes {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
 }
 
 .section-contacts__title {
@@ -37,9 +35,6 @@
   // Для планшетов от 768px
   @media (min-width: 768px) {
     margin-bottom: 50px;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
   }
 }
 
@@ -50,9 +45,6 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-  }
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
   }
 }
 
@@ -87,9 +79,6 @@
 }
 
 .contacts-desc-info-item {
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     display: flex;
@@ -99,9 +88,6 @@
 .contacts-desc-info-item + .contacts-desc-info-item {
   margin-top: 9px;
 
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     margin-top: 20px;
@@ -110,9 +96,6 @@
 
 .contacts-title {
   line-height: 1.5;
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     width: 40%;
@@ -124,9 +107,6 @@
   font-size: 18px;
   font-weight: 500;
 
-  // Для планшетов от 768px
-  @media (min-width: 768px) {
-  }
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     font-size: 20px;

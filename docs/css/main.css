@@ -1186,29 +1186,21 @@ span .yellow ::-webkit-selection {
     padding: 150px 0;
   }
 }
-.section-contacts::after {
+.section-contacts__img {
   display: none;
 }
-@media (min-width: 1300px) {
-  .section-contacts::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-       -moz-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-         -o-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    left: -70px;
+@media (min-width: 1400px) {
+  .section-contacts__img {
     display: block;
-    height: 250px;
-    width: 200px;
-    background-image: url(../img/section-contacts/semi-col.png);
-    background-repeat: no-repeat;
-    -moz-background-size: contain;
-         background-size: contain;
-    opacity: 0.4;
+    position: absolute;
+    top: 30%;
+    left: -5%;
   }
+}
+.move-quotes {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
 }
 .section-contacts__title {
   margin-bottom: 37px;
@@ -1918,5 +1910,59 @@ label.error {
   text-align: center;
   font-weight: 500;
   margin-top: 164px;
+}
+.footer {
+  background-color: #333333;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+.footer-text {
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+.footer-text a {
+  display: inline-block;
+  color: #b0b0b0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-text a::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #b0b0b0;
+  bottom: 5px;
+  left: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-text a:hover {
+  color: white;
+}
+.footer-text a:hover::after {
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

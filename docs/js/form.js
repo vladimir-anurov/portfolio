@@ -74,4 +74,18 @@ $(document).ready(function(){
 		// Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
 		return false;
 	}
+
+	// ПАРАЛЛАКС ДВИЖЕНИЯ ЗА МЫШКОЙ
+		let prxScene = document.querySelector('.section-contacts')
+		let prxItem = document.querySelectorAll('.move-quotes');
+		prxScene.addEventListener('mousemove', function (e) {
+			let x = e.clientX / window.innerWidth;
+			let y = e.clientY / window.innerHeight;
+			for (let item of prxItem) {
+				item.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+			}
+	});
+
 })
+
+
