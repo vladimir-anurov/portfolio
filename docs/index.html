@@ -6,18 +6,34 @@
     <title>В.Ануров: web-разработчик</title>
 
     <link rel="stylesheet" href="fonts/mplus1/mplus1p.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     
 </head>
 
 <body>
 
+    <ul id="page-nav">
+        <li class="active">
+            <a href="#header"></a>
+        </li>
+        <li>
+            <a href="#portfolio"></a>
+        </li>
+        <li>
+            <a href="#timeline"></a>
+        </li>
+        <li>
+            <a href="#contacts"></a>
+        </li>
+    </ul>
+
     <div id="overlay"></div>
 
     <div class="mobile-menu"></div>
 
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
 
         <!-- header top -->
         <div class="header__top-container">
@@ -264,7 +280,7 @@
         <!--// section-portfolio -->
 
         <!-- section-timeline -->
-        <section class="section-timeline">
+        <section class="section-timeline" id="timeline">
 
             <div class="container">
 
@@ -400,7 +416,6 @@
 
             <div class="container">
 
-
                 <div class="section-contacts__title">
                     <h2 class="title-2">
                         <span class="underline">Контакты</span></h2>
@@ -414,45 +429,24 @@
                             <p>Если вы ищете специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом — напишите мне.</p>
                         </div>
 
-                        <div class="contacts-desc-info">
-
-                            <div class="contacts-desc-info-item">
-                                <div class="contacts-title">
-                                    <h5 class="title-5">Email</h5>
-                                </div>
-                                <div class="contacts-link">
-                                    <a href="mailto:mrvladimiranurov@gmail.com?subject=Заказ на вёрстку" class="link--hover-active">mrvladimiranurov@gmail.com</a>
-                                </div>
-                            </div>
-
-                            <div class="contacts-desc-info-item">
-                                <div class="contacts-title">
-                                    <h5 class="title-5">Skype</h5>
-                                </div>
-                                <div class="contacts-link">
+                        <ul class="contacts-desc-list">
+                            <li class="contacts-desc-list-item">
+                                    <p>Email</p>
+                                    <a href="mailto:mrvladimiranurov@gmail.com?subject=Заказ на вёрстку">mrvladimiranurov@gmail.com</a>
+                            </li>
+                            <li class="contacts-desc-list-item">
+                                    <p>Skype</p> 
                                     <a href="skype:wolf-ls1?chat">wolf-ls1</a>
-                                </div>
-                            </div>
-
-                            <div class="contacts-desc-info-item">
-                                <div class="contacts-title">
-                                    <h5 class="title-5">Телефон</h5>
-                                </div>
-                                <div class="contacts-link">
+                            </li>
+                            <li class="contacts-desc-list-item">
+                                    <p>Телефон</p>
                                     <a href="tel:+79268318129">+7 (926) 831 81 29</a>
-                                </div>
-                            </div>
-
-                            <div class="contacts-desc-info-item">
-                                <div class="contacts-title">
-                                    <h5 class="title-5">Адрес</h5>
-                                </div>
-                                <div class="contacts-link">
+                            </li>
+                            <li class="contacts-desc-list-item">
+                                    <p>Адрес</p>
                                     <p>Россия, Москва</p>
-                                </div>
-                            </div>
-
-                        </div>
+                            </li>
+                        </ul>
 
                         <div class="contacts-block-social-icons">
                             <div class="social-icons">
@@ -533,6 +527,8 @@
     <script src="libs/jquery.validate/jquery.validate.js"></script>
     <script src="https://kit.fontawesome.com/7a8c569e2f.js" crossorigin="anonymous"></script>
     <script src="js/form.js"></script>
+    <script src="libs/nav.js/nav.js"></script>
+    <script src="js/script_nav.js"></script>
     <script src="js/main.js"></script>
 
 </body>

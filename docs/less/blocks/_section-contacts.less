@@ -9,6 +9,10 @@
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     padding: 150px 0;
+    background-image: url(../img/section-contacts/stripes.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat-y;
   }
 }
 
@@ -74,52 +78,45 @@
   }
 }
 
-.contacts-desc-info {
+.contacts-desc-list {
   position: relative;
+  color: #96969d;
 }
 
-.contacts-desc-info-item {
+.contacts-desc-list-item {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     display: flex;
+    font-size: 20px;
+  }
+
+  p:first-child {
+    min-width: 100px;
+    margin-right: 100px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: black;
+  }
+
+  a {
+    color: #039be5;
+    transition: 0.5s;
+  }
+
+  a:hover {
+    color: var(--red);
   }
 }
 
-.contacts-desc-info-item + .contacts-desc-info-item {
+.contacts-desc-list-item + .contacts-desc-list-item {
   margin-top: 9px;
-
   // Для десктопа от 1200px
   @media (min-width: 1200px) {
     margin-top: 20px;
   }
-}
-
-.contacts-title {
-  line-height: 1.5;
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    width: 40%;
-  }
-}
-
-.contacts-link {
-  color: #96969d;
-  font-size: 18px;
-  font-weight: 500;
-
-  // Для десктопа от 1200px
-  @media (min-width: 1200px) {
-    font-size: 20px;
-  }
-
-  a {
-    transition: 0.5s;
-    color: #039be5;
-  }
-}
-
-.contacts-link a:hover {
-  color: var(--red);
 }
 
 .contacts-block-social-icons {
