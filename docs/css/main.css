@@ -1958,10 +1958,16 @@ label.error {
   background-color: white;
 }
 #page-nav {
-  position: fixed;
-  right: 80px;
-  top: 40%;
-  z-index: 100;
+  display: none;
+}
+@media (min-width: 1300px) {
+  #page-nav {
+    display: block;
+    position: fixed;
+    right: 80px;
+    top: 40%;
+    z-index: 100;
+  }
 }
 #page-nav li {
   width: 14px;
