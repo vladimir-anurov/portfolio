@@ -69,16 +69,15 @@ $('#page-nav').onePageNav({
 //показать кнопку скролл вверх
     $('#backtop').hide();
 
-    $(window).scrollTop(function(){
+    $(window).scroll(function(){
 
         if( $(this).scrollTop() > 300 ){
-
+            
             $('#backtop').fadeIn();
         }
         else{
             $('#backtop').fadeOut();
         }
-        
 });
 
 

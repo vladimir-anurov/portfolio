@@ -2008,18 +2008,18 @@ label.error {
   background-color: var(--red);
 }
 #backtop {
-  display: block;
+  display: inline-block;
   font-size: 50px;
   color: var(--red);
   font-weight: 700;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 5;
+  z-index: 100;
 }
 @media (min-width: 1200px) {
   #backtop {
-    display: none;
+    display: none !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
